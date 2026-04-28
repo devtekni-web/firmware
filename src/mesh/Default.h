@@ -10,7 +10,7 @@
 #define TEN_SECONDS_MS 10 * 1000
 #define MAX_INTERVAL INT32_MAX // FIXME: INT32_MAX to avoid overflow issues with Apple clients but should be UINT32_MAX
 
-#define min_default_telemetry_interval_secs 30 * 60
+#define min_default_telemetry_interval_secs 1 * 60
 #define default_gps_update_interval IF_ROUTER(ONE_DAY, 2 * 60)
 #define default_telemetry_broadcast_interval_secs IF_ROUTER(ONE_DAY / 2, 60 * 60)
 #define default_broadcast_interval_secs IF_ROUTER(ONE_DAY / 2, 15 * 60)
@@ -30,10 +30,10 @@
 #define default_ringtone_nag_secs 60
 #endif
 
-#define default_mqtt_address "mqtt.meshtastic.org"
-#define default_mqtt_username "meshdev"
-#define default_mqtt_password "large4cats"
-#define default_mqtt_root "msh"
+#define default_mqtt_address "192.168.0.198"
+#define default_mqtt_username ""
+#define default_mqtt_password ""
+#define default_mqtt_root "tk"
 #define default_mqtt_encryption_enabled true
 #define default_mqtt_tls_enabled false
 
