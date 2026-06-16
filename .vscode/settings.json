@@ -10,5 +10,7 @@
   },
   "[powershell]": {
     "editor.defaultFormatter": "ms-vscode.powershell"
-  }
+  },
+  "telemetry.feedback.enabled": false,
+  "platformio-ide.customPATH": ""
 }
